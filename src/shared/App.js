@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
-import {Home} from '../components/routes/Home';
+import {Home, Contact} from '../components/routes';
 // import {Home, Robot, LoginPage, PageNotFound, MakeMapPage, RobotSet, Setting, Clean, Member, Support, AdminRobot, TableSetting} from '../routes';
 
 class App extends Component {
@@ -10,6 +10,7 @@ class App extends Component {
                 <div>
                   <Switch>
                     <Route exact path='/' component={Home}/>
+                    <Route exact path='/contact' component={Contact}/>
                   </Switch>
                 </div>
               </BrowserRouter> 

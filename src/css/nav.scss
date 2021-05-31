@@ -1,0 +1,58 @@
+.navbar-end {
+  display: flex;
+  float: right;
+  margin-top: 20px;
+}
+
+.button-pos {
+  margin: 15px;
+}
+
+.paper-body-form {
+  font-size: 12px;
+  margin: 15px;
+}
+
+.paper-body-form2 {
+  font-size: 12px;
+  margin: 15px;
+}
+
+.paper-body-form3 {
+  font-size: 12px;
+  color: #0012ef;
+  font-weight: 600;
+  margin: 15px;
+}
+
+.confirm-checkbox {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 20px;
+}
+
+.container-form {
+  background-image: url("../images/serve-image-02.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Link-form {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 600;
+
+  &:hover {
+    color: rgb(145, 145, 145);
+  }
+}
+
+.Logo {
+  position: relative;
+  top: 30px;
+  margin-left: 70px;
+  text-decoration: none;
+  padding: 40px;
+  background-image: -moz-repeating-linear-gradient();
+}
