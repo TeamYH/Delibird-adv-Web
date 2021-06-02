@@ -7,7 +7,7 @@ import '../../css/contact.scss';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 
-export default function AddressForm() {
+export default function AddressForm(props) {
   return (
     <React.Fragment>
       <Typography variant="subtitle2" gutterBottom>
@@ -18,6 +18,7 @@ export default function AddressForm() {
         <Grid item xs={12}>
           <TextField
             required
+            onChange={props.handleName}
             id="Name"
             name="Name"
             label="이름"
@@ -28,6 +29,7 @@ export default function AddressForm() {
         <Grid item xs={12}>
           <TextField
             required
+            onChange={props.handlePhone}
             id="phoneNumber"
             name="phoneNumber"
             label="연락처"
@@ -37,6 +39,7 @@ export default function AddressForm() {
         <Grid item xs={12}>
           <TextField
             required
+            onChange={props.handleEmail}
             id="email"
             name="email"
             label="이메일"
@@ -69,6 +72,7 @@ export default function AddressForm() {
         
         <Grid item xs={12}>
           <TextField
+            onChange={props.handleComment}
             id="Comment"
             name="Comment"
             label="문의 내용 (ex: 제품 문의)"
