@@ -1,6 +1,57 @@
 .about-title {
+  text-align: center;
   margin: 15px;
   font-size: 40px;
   font-weight: 600;
   color: rgb(58, 58, 58);
+}
+
+.about-form {
+  min-height: 500px;
+}
+
+.about-container-form {
+  margin-top: 30px;
+  padding: 0px;
+}
+
+.delibird-carousel-paper-form {
+  min-height: 500px;
+}
+
+.about-text {
+  margin: 20px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.description-title {
+  padding-top: 80px;
+  font-size: 30px;
+}
+
+.robot-iamge {
+  position: relative;
+  left: 80px;
+  min-width: 200px;
+  min-height: 400px;
+  background-image: url("../images/robot-image.png");
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+
+.sub-comment {
+  text-align: center;
+  font-weight: 600;
+}
+
+.img {
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.description-form {
+  text-align: center;
+  font-weight: 600;
 }

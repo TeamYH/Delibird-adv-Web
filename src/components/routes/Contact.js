@@ -14,7 +14,7 @@ class Contact extends Component {
   render() { 
     return ( 
       <div>
-        <Container fixed>
+        <Container style={{backgroundColor:"#5f5f5fa3"}} fixed>
           <Logo />
           <Navbar />
         </Container>

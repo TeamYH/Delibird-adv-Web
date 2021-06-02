@@ -21,7 +21,9 @@
 }
 
 .footer-pos {
+  margin-left: 30px;
   margin-top: 15px;
+  margin-bottom: 30px;
 }
 
 .button-pos2 {
@@ -44,4 +46,8 @@
     background-color: rgba($color: #dbe0ff, $alpha: 0.1);
     padding: 11px;
   }
+}
+
+.delibird-carousel {
+  margin-top: 20px;
 }

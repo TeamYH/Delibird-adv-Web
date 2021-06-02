@@ -11,8 +11,8 @@ class Logo extends Component {
   render() { 
     return ( 
       <span>
-        <Link className="Logo" to="/">
-          Delibird
+        <Link className="logo-link" to="/">
+          <div className="Logo"><span className="hidden">Delibird</span></div>
         </Link>
       </span>
     );

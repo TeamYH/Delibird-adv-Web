@@ -8,17 +8,18 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 import AboutDelibird from '../About/about_delibird';
+import DelibirdCarousel from '../Product/carousel';
 
 function Footer() {
   return (
     <div className="footer-pos">
-      <Typography variant="body2" color="textSecondary" align="left">
+      <Typography style={{marginBottom:"10px"}} variant="body2" color="textSecondary" align="left">
         대표 전화: 010 6747 8803 | 대표자: TeamYH
       </Typography>
       <Typography variant="body2" color="textSecondary" align="left">
         {'Copyright © '}
         <Link color="inherit" href="/">
-          Delibird
+            Delibird
         </Link>{' '}
         {new Date().getFullYear()}
         {'.'}
@@ -51,7 +52,7 @@ class Home extends Component {
   render() { 
     return ( 
       <div>
-        <Container fixed className="container-form">
+        <Container fixed style={{minWidth: "85%"}} className="container-form">
           <Logo />
           <Navbar />
           <div className="comment">
@@ -62,11 +63,14 @@ class Home extends Component {
             </div>
           </div>
         </Container>
-        <Container className="body-container">
-          <Divider />
+        <Divider />
+        <Container style={{backgroundColor:"white", padding: "0", minWidth: "85%"}} className="body-container">
           <AboutDelibird ref={this.state.section.ref}/>
+          <div className="delibird-carousel">
+            <DelibirdCarousel />
+          </div>
         </Container>
-        <Container className="footer-container">
+        <Container style={{minWidth: "85%"}} className="footer-container">
           <Divider />
           <Footer />
         </Container>
